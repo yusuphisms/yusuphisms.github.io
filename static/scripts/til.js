@@ -1,9 +1,30 @@
 $(document).ready(function(){
-    console.log('eep')
     $.get('../resources/til.jsonl', function(data){
         let mainDiv = $('.card-columns');
+        // Get unique tags from the list of TILs
+        let tagsToggler = $('#learning-tags');
+        let tagsArray = [];
+        for (item of data.split('\n')) {
+            j = JSON.parse(item);
+            for (tag of j['tags']){
+                if (tagsArray.includes(tag)){
+                    continue;
+                } else {
+                    tagsArray.push(tag);
+                } 
+            };
+
+        };
+        
+        // Add tags to the navigation
+        for (tag of tagsArray){
+            let l = $('<div>', {"class": "nav-item"});
+            let a = $('<a>', {"class": "nav-link", "onclick": "hide('"+tag+"')"}).text(tag.toUpperCase());
+            tagsToggler.append(l.append(a));
+        };
+
+        //Add each TIL card to the card mosaic
         for (i=0; i < data.split('\n').length; i++) {
-            console.log(JSON.parse(data.split('\n')[i])['body']);
             let dataArray = data.split('\n');
             let j = JSON.parse(dataArray[i]);
 
@@ -21,25 +42,3 @@ $(document).ready(function(){
         };   
     });
 });
-/*
-Get div with class="card-columns"
-For each JSON in the jsonl, Create div with class="card" within that div
-class="card" div needs three child divs: class="card-header", class="card-body", class="card-footer"
-class="card-body" div needs one child <p class="card-text">
-Map date to card-footer
-Map title to card-header
-map body to card-text
-map tags to class="card" div's data-tag attribute separated by space
-
-
-*/
-// date, title, body, tags
-
-{/* <div class="card" id="card" data-tag="python git">
-                <div class="card-header">Woop woop</div>
-                <div class="card-body">
-                    <h5 class="card-title">🐍🐍</h5>
-                    <p class="card-text">On this new day, I learned Python streaming.</p>
-                </div>
-                <div class="card-footer">my footer in my mouth</div>
-            </div> */}
