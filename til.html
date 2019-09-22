@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Yusuph - Today I Learned</title>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    
+    <!--Let's get an example working as intended with fake data-->
+    <br>
+    <script>
+    function hide(t) {
+        $(".card").addClass('d-none');
+        $("[data-tag*='"+t+"']").toggleClass('d-none');
+    };
+    </script>
+    <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                Toggle Learning Tags
+                <ul class="navbar-nav" id="learning-tags"></ul>
+            </nav>
+    </div>
+    <br>
+    <div class="card-columns" id="til-cards"></div>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./static/scripts/jquery-3.4.1.min.js"></script>
+    <script src='./static/scripts/moment-with-locales.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src='./static/scripts/site.js'></script>
+    <script src='./static/scripts/til.js'></script>
+  </body>
+</html>
