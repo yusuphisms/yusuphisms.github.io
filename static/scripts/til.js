@@ -4,8 +4,11 @@ $(document).ready(function(){
         // Get unique tags from the list of TILs
         let tagsToggler = $('#learning-tags');
         let tagsArray = [];
-        for (item of data.split('\n')) {
+        let dataArray = data.split('\n');
+        for (item of dataArray) {
             j = JSON.parse(item);
+            
+            // Get unique tags from the list of TILs
             for (tag of j['tags']){
                 if (tagsArray.includes(tag)){
                     continue;
@@ -13,6 +16,17 @@ $(document).ready(function(){
                     tagsArray.push(tag);
                 } 
             };
+            
+            // Add each TIL card to the card mosaic
+            let cardDiv = $('<div>', {"class": "card", "data-tag": j['tags'].join(' ')});
+            let cardHeader = $('<div>', {"class": "card-header"}).text(j['title']);
+            let cardBody = $('<div>', {"class": "card-body"});
+            let cardText = $('<p>', {"class": "card-text"}).text(j['body']);
+            let cardFooter = $('<div>', {"class": "card-footer"}).text(moment(j['date']).format('MM/DD/YYYY'));
+
+            cardBody.append(cardText);
+            let card = cardDiv.append(cardHeader, cardBody, cardFooter);
+            mainDiv.append(card);
 
         };
         
@@ -24,23 +38,6 @@ $(document).ready(function(){
             let a = $('<a>', {"class": "nav-link", "onclick": "hide('"+tag+"')"}).text(tag.toUpperCase());
             tagsToggler.append(l.append(a));
         };
-
-        //Add each TIL card to the card mosaic
-        for (i=0; i < data.split('\n').length; i++) {
-            let dataArray = data.split('\n');
-            let j = JSON.parse(dataArray[i]);
-
-            let cardDiv = $('<div>', {"class": "card", "data-tag": j['tags'].join(' ')});
-            let cardHeader = $('<div>', {"class": "card-header"}).text(j['title']);
-            let cardBody = $('<div>', {"class": "card-body"});
-            let cardText = $('<p>', {"class": "card-text"}).text(j['body']);
-            let cardFooter = $('<div>', {"class": "card-footer"}).text(moment(j['date']).format('MM/DD/YYYY'));
-
-            cardBody.append(cardText);
-            let card = cardDiv.append(cardHeader, cardBody, cardFooter);
-            mainDiv.append(card);
-
-            
-        };   
+          
     });
 });
