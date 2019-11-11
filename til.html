@@ -17,8 +17,8 @@
     <br>
     <script>
     function hide(t) {
-        $(".card").addClass('d-none');
-        $("[data-tag*='"+t+"']").toggleClass('d-none');
+        $(".card").addClass('d-none'); //hides all the cards
+        $("[data-tag*='"+t+"']").toggleClass('d-none'); //unhides only the selected tag
     };
     </script>
     <div class="container">

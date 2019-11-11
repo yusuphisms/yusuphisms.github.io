@@ -17,8 +17,10 @@ $(document).ready(function(){
         };
         
         // Add tags to the navigation
+        let l = $('<div>', {"class": "nav-item"});
+        let a = $('<a>', {"class": "nav-link", "onclick": "$('.card').removeClass('d-none');"}).text("SHOW ALL");
+        tagsToggler.append(l.append(a));
         for (tag of tagsArray){
-            let l = $('<div>', {"class": "nav-item"});
             let a = $('<a>', {"class": "nav-link", "onclick": "hide('"+tag+"')"}).text(tag.toUpperCase());
             tagsToggler.append(l.append(a));
         };
