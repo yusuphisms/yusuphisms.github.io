@@ -1,0 +1,9 @@
+.tagtoggle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tagtoggle > span {
+    text-align: center;
+    text-decoration: underline;
+}

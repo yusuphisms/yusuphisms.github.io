@@ -4,8 +4,11 @@ $(document).ready(function(){
         // Get unique tags from the list of TILs
         let tagsToggler = $('#learning-tags');
         let tagsArray = [];
-        for (item of data.split('\n')) {
+        let dataArray = data.split('\n');
+        for (item of dataArray) {
             j = JSON.parse(item);
+            
+            // Get unique tags from the list of TILs
             for (tag of j['tags']){
                 if (tagsArray.includes(tag)){
                     continue;
@@ -13,21 +16,8 @@ $(document).ready(function(){
                     tagsArray.push(tag);
                 } 
             };
-
-        };
-        
-        // Add tags to the navigation
-        for (tag of tagsArray){
-            let l = $('<div>', {"class": "nav-item"});
-            let a = $('<a>', {"class": "nav-link", "onclick": "hide('"+tag+"')"}).text(tag.toUpperCase());
-            tagsToggler.append(l.append(a));
-        };
-
-        //Add each TIL card to the card mosaic
-        for (i=0; i < data.split('\n').length; i++) {
-            let dataArray = data.split('\n');
-            let j = JSON.parse(dataArray[i]);
-
+            
+            // Add each TIL card to the card mosaic
             let cardDiv = $('<div>', {"class": "card", "data-tag": j['tags'].join(' ')});
             let cardHeader = $('<div>', {"class": "card-header"}).text(j['title']);
             let cardBody = $('<div>', {"class": "card-body"});
@@ -38,7 +28,38 @@ $(document).ready(function(){
             let card = cardDiv.append(cardHeader, cardBody, cardFooter);
             mainDiv.append(card);
 
-            
-        };   
+        };
+        
+        let tagToggle = $('.tagtoggle');
+        a = $('<span>', {"id": "showall", "onclick": "handleShowAll()"}).text("SHOW ALL");
+        tagToggle.append(a);
+        for (tag of tagsArray){
+            let a = $('<span>', {"id": ""+tag+"", "onclick": "handleTagClick('"+tag+"')"}).text(tag.toUpperCase());
+            tagToggle.append(a);
+        };
+
     });
 });
+
+
+var handleTagClick = function(t){
+    $(".card").addClass('d-none'); //hides all the cards
+    let selectedTag = $('#'+t)
+    let selectedTagCards = $("[data-tag*='"+t+"']");
+    selectedTagCards.toggleClass('d-none'); //unhides only the selected tag's cards
+    
+    let tagSpans = $('.tagtoggle').children();
+    for (t of tagSpans){
+        t.setAttribute("style", "");
+    }
+    selectedTag.css('font-weight', 'Bold');
+
+}
+
+var handleShowAll = function(){
+    $('.card').removeClass('d-none');
+    let tagSpans = $('.tagtoggle').children();
+    for (t of tagSpans){
+        t.setAttribute("style", "");
+    }
+}
