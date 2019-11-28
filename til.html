@@ -7,25 +7,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/styles/til.css">
 
     <title>Yusuph - Today I Learned</title>
   </head>
   <body>
-    <div id="nav-placeholder"></div>
-    
-    <!--Let's get an example working as intended with fake data-->
+    <div id="nav-placeholder"></div>    
     <br>
-    <script>
-    function hide(t) {
-        $(".card").addClass('d-none'); //hides all the cards
-        $("[data-tag*='"+t+"']").toggleClass('d-none'); //unhides only the selected tag
-    };
-    </script>
-    <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                Toggle Learning Tags
-                <ul class="navbar-nav" id="learning-tags"></ul>
-            </nav>
+    <p>Keeping small bytes of things, tips, and tricks that were fun and new to learn. I like Bootstrap Cards more than keeping it on a Twitter thread for now.</p>
+    <p style="text-align: center">Click To Toggle #TIL Tags</p>
+    <div class="tagtoggle">
     </div>
     <br>
     <div class="card-columns" id="til-cards"></div>

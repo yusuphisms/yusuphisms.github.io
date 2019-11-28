@@ -30,14 +30,36 @@ $(document).ready(function(){
 
         };
         
-        // Add tags to the navigation
-        let l = $('<div>', {"class": "nav-item"});
-        let a = $('<a>', {"class": "nav-link", "onclick": "$('.card').removeClass('d-none');"}).text("SHOW ALL");
-        tagsToggler.append(l.append(a));
+        let tagToggle = $('.tagtoggle');
+        a = $('<span>', {"id": "showall", "onclick": "handleShowAll()"}).text("SHOW ALL");
+        tagToggle.append(a);
         for (tag of tagsArray){
-            let a = $('<a>', {"class": "nav-link", "onclick": "hide('"+tag+"')"}).text(tag.toUpperCase());
-            tagsToggler.append(l.append(a));
+            let a = $('<span>', {"id": ""+tag+"", "onclick": "handleTagClick('"+tag+"')"}).text(tag.toUpperCase());
+            tagToggle.append(a);
         };
-          
+
     });
 });
+
+
+var handleTagClick = function(t){
+    $(".card").addClass('d-none'); //hides all the cards
+    let selectedTag = $('#'+t)
+    let selectedTagCards = $("[data-tag*='"+t+"']");
+    selectedTagCards.toggleClass('d-none'); //unhides only the selected tag's cards
+    
+    let tagSpans = $('.tagtoggle').children();
+    for (t of tagSpans){
+        t.setAttribute("style", "");
+    }
+    selectedTag.css('font-weight', 'Bold');
+
+}
+
+var handleShowAll = function(){
+    $('.card').removeClass('d-none');
+    let tagSpans = $('.tagtoggle').children();
+    for (t of tagSpans){
+        t.setAttribute("style", "");
+    }
+}
