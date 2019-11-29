@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $.get('../resources/til.jsonl', function(data){
+    $.get('/resources/til.jsonl', function(data){
         let mainDiv = $('.card-columns');
         // Get unique tags from the list of TILs
         let tagsToggler = $('#learning-tags');
