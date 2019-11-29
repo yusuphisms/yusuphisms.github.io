@@ -9,90 +9,30 @@ categories: [Education, inequality, place, Python, spatial analysis]
 During my time in school, I became fascinated by this notion that place matters. It is an obvious idea five minutes into thinking about it. However, when explicitly declared, it is one of the most revolutionary ideas in the study of human life. It's particularly interesting when tackling spatial analysis on topics that one wouldn't (and shouldn't be expected to!) assume to be at all related to one's physical location in life. One such topic is education. While the "zip code shouldn't matter" movement in education has a strong foundation in the USA, I feel that we need a deeper look at how we can translate these same principles to a discourse on spatial inequality in Tanzania and other developing countries. My goal for this post is to "put education in its place" - that is, how we can begin to understand if place matters, the extent to which it matters, and how we might use those insights to most effectively intervene in the education sector.
 
 <!--more-->
-<div id="notebook" class="border-box-sizing">
-<div id="notebook-container" class="container">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-
 As always, you can find the <a href="https://github.com/yo-my-bard/Scraping-NECTA/blob/master/PSLE_Spatial_Analysis.ipynb">reproducible code for this on my Github account.</a>
 
 First, let me quickly note the features in this dataset: the candidate number, their sex (Female is 1), subject scores in integers 1-5 (E-A) with some NaNs for X values. NECTA, the examination body in Tanzania, generates Average Grade as an integer. However, for more variation in scores, I added a calculated average feature that takes the mean of the subject scores. Note that the average grade is often the rounding of the calculated grade. Finally, the candidate number encodes the region that the student is from, as well as the district and school. Using regular expressions, I assigned Region and District values to each student when cleaning the data.
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div></div>
-<div class="text_cell_render border-box-sizing rendered_html">Our driving question here is whether your geographic location affects your success in the Primary School Leaving Examination (PSLE).</div>
-<div></div>
-<div class="text_cell_render border-box-sizing rendered_html">
+Our driving question here is whether your geographic location affects your success in the Primary School Leaving Examination (PSLE).
 
 We can begin by looking at the distribution of scores by region. Although helpful, the number of regions makes the statistical output hard to digest. We use a boxplot below for more visual clarity on how regions' average score distributions compare.
 
 Overall, if you compare 2017 to 2013 (I don't focus on 2013 here, but feel free to run this analysis with <a href="https://github.com/yo-my-bard/Scraping-NECTA/tree/master/CompleteDatasets">2013's dataset</a> from <a href="https://github.com/yo-my-bard/Scraping-NECTA/blob/master/PSLE_Spatial_Analysis.ipynb">my GitHub account as I did</a>!), average scores have increased across all regions. I would be curious to test if the improvements in the 4-year span are authentic or engineered. Tanzania has a historical difficulty with standardizing their exams. Reports of <a href="http://www.thecitizen.co.tz/News/Performance-in-Kiswahili--English-and-Maths-decline-/1840340-3432258-2ktmky/index.html">wild variance within a 5-year period are not uncommon</a>. The government may have changed the difficulty of the exam, changed how it grades the questions, or ultimately changed what constitutes passing scores. This is taking a more skeptical/cynical lens in evaluating the scores, but given Tanzania's past volatile passing rates, the skepticism may be warranted. Nonetheless, our hope is that the results are genuine and a good benchmark for students' continuing education in secondary school.
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input"></div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_png output_subarea ">
+<img class="alignnone size-full wp-image-55" src="https://elimumwalimu.files.wordpress.com/2018/04/psle_distributions-e1522816687371.jpg" alt="psle_distributions_region" width="1734" height="611" /> 
 
-[caption id="attachment_55" align="alignnone" width="1734"]<img class="alignnone size-full wp-image-55" src="https://elimumwalimu.files.wordpress.com/2018/04/psle_distributions-e1522816687371.jpg" alt="psle_distributions_region" width="1734" height="611" /> Distributions of Average Scores on PSLE 2017 by Region[/caption]
+_Distributions of Average Scores on PSLE 2017 by Region_
 
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt"></div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
+I conduct a one-way analysis of variance (ANOVA) using the regions as the groups to test for differences between regional scores. I do assume the data is mostly normal for each region and I conducted the test without outliers in case there was concern about them. The results are statistically significant at p < 0.001 level in both cases. I imagine this intuitively makes sense. We are testing whether or not performance on the PSLE is equal across 25+ regions - we'd naturally expect variation.
 
-I conduct a one-way analysis of variance (ANOVA) using the regions as the groups to test for differences between regional scores. I do assume the data is mostly normal for each region and I conducted the test without outliers in case there was concern about them. The results are statistically significant at p &lt; 0.001 level in both cases. I imagine this intuitively makes sense. We are testing whether or not performance on the PSLE is equal across 25+ regions - we'd naturally expect variation.
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input"></div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="output_subarea output_stream output_stdout output_text">
 <pre>F_onewayResult(statistic=2417.0113629815164, pvalue=0.0)
 
 #Without outliers
 F_onewayResult(statistic=2417.0113629815164, pvalue=0.0)
 </pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt"></div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 
 <a href="http://hamelg.blogspot.com/2015/11/python-for-data-analysis-part-16_23.html">hamelg's blog</a> was particularly useful because while I knew I wanted to compare groups using ANOVA, I wasn't sure of the best practice for Python. Coming from an SPSS background, this is both exciting and frustrating. The output was quick and easy with SPSS' GUI. Anyway, in keeping with hamelg's advice, I checked for which groups are driving this variance. I won't go into too much detail about the results of the code, but suffice it to say, the T-tests showed variation between many of the group combinations. So many in fact, that it may be more worthwhile to look at the regions which show potential for no significant variance. What about these regions without significant variance is similar? Different? Closer analysis with these questions in mind may offer an opportunity for government entities to act on specific key performance indicators rather than the whole gamut of issues to approach - especially for the low performing regions.
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
 <pre>ARUSHA NJOMBE
 Ttest_indResult(statistic=-1.3507663860147461, pvalue=0.17677560035173179)
 
@@ -135,49 +75,15 @@ Ttest_indResult(statistic=0.99515867161949911, pvalue=0.31966318652493919)
 RUKWA RUVUMA
 Ttest_indResult(statistic=0.69074056129863837, pvalue=0.48973176628336035)
 </pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt"></div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 
-All other group comparisons were statistically significant at p &lt; 0.03 (most at p &lt; 0.001).
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt"></div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
+All other group comparisons were statistically significant at p < 0.03 (most at p < 0.001).
 
 To the question of whether or not place may determine your outcome on this exam, so far the analysis suggests there are at least some differences between some regions.
 
 Next, I attempt to build a simple model to assess the magnitude by which a typical student in one region may outperform or underachieve compared to another student in another region. So far there is strong evidence that place matters, but now the aim is to answer the extent to which it matters.
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt"></div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-
 In my look at <a href="https://elimumwalimu.wordpress.com/2018/03/10/inequality-in-education-sex-gender/">Sex-based inequality in education in Tanzania,</a> I noted the average difference by gender even while accounting for regional differences. That same regression reveals yet another inequality by way of regional outcomes. We illustrate the regression for the year 2017 and the effect of Regions and Sex on Calculated Averages.
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
 <pre>                            OLS Regression Results                            
 ==============================================================================
 Dep. Variable:            CalcAverage   R-squared:                       0.069
@@ -229,29 +135,11 @@ Kurtosis:                       2.766   Cond. No.                         30.0
 Warnings:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 </pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt"></div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 
-A few things are of note again: once more, we see that regions have improved their average scores on the PSLE. I find the transformation of Geita's scores since 2013 to be the most surprising - shooting up to have the best average score of all the regions in the country. The coefficients here are relative to Arusha, but with an average score of 3.08, it's just past the passing mark so students in regions with coefficients &lt; 0 are of greater concern. I would also be remiss if I did not reiterate once more that for girls, these spatial negative effects are <em>compounded</em> with current sex inequalities.
+A few things are of note again: once more, we see that regions have improved their average scores on the PSLE. I find the transformation of Geita's scores since 2013 to be the most surprising - shooting up to have the best average score of all the regions in the country. The coefficients here are relative to Arusha, but with an average score of 3.08, it's just past the passing mark so students in regions with coefficients < 0 are of greater concern. I would also be remiss if I did not reiterate once more that for girls, these spatial negative effects are <em>compounded</em> with current sex inequalities.
 
 Regions are pretty broad. Even within regions, average scores can vary significantly. What if we observed this relationship at the more granular level of districts? There are about 180 districts and the results are below (see <a href="https://github.com/yo-my-bard/Scraping-NECTA/blob/master/PSLE_Spatial_Analysis.ipynb">GitHub</a> for coefficient numbers)
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
 <pre>                            OLS Regression Results                            
 ==============================================================================
 Dep. Variable:            CalcAverage   R-squared:                       0.118
@@ -275,24 +163,9 @@ Kurtosis:                       2.831   Cond. No.                         295.
 Warnings:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 </pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt"></div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 
 The district model explains more of the variance (larger R-squared value) probably owing to its granularity. However, I notice that if 2.5+ is what's needed on the CalcAverage to pass, then the average for many districts is right on par. The coefficients here are based on the Ifakara Mjini district. This is not too surprising - the box plot visually shows that many regions had a median that far exceeded the 2.5 mark. The region closest to that mark is Singida's and the Mkalama district within Singida is the lowest performing district on average. The districts with averages that are less than 2.5 are: Mkalama (2.22), Meatu (2.28), Lushoto (2.48), Chemba (2.48), and Ukerewe (2.49).
 
 There are certainly other approaches one could take on this discussion - this isn't by any means exhaustive. Here we compare district and regions without taking into account any other factors other than sex. For instance, district sizes (the number of students taking the exam or the general population size) may matter. There are also other measures that we could take into account that may better explain these averages, such as the often cited pupil to teacher ratio or functioning latrines. Where we may have found success, however, is in <strong>ascertaining that place matters</strong> when it comes to a student's performance in Tanzania. We also explored the magnitude of the differences and found that the variation between years may be key in evaluating magnitude going forward.
 
 One of my favorite discoveries (maybe non-discovery?) are the regions which the analysis found to not have significantly different variation in scores. For a government institution, this is a promising insight that may allow the clustering of regions (or districts!) into buckets that are doing well, those that aren't, and the reasons for both. It may be a more systematic approach to finding and managing key performance indicators for all regions. As of now, I feel that we have a sense of what makes a region successful. However, these analyses may provide more clarity on specific indicators of success.
-
-</div>
-</div>
-</div>
-</div>
-</div>

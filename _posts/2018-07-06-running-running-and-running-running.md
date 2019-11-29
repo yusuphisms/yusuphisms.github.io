@@ -14,7 +14,7 @@ This will be a short one since the script is short and I just want to talk overa
 
 I had not worked with XML files before (definitely #teamJSON), but luckily R has a nice XML wrangling package in XML2. From here in, it was pretty much a data structure game. I went through many of the functions in XML2 to get a better understanding of terminology: node sets, parents, children, attributes, etc. None were wildly new having worked slightly with Javascript and the DOM, but orientation to this new idea took some experimentation. Truthfully, I probably got frustrated that I was finding imperfect solutions, because surely someone out there had a much better solution from my problem that they already implemented. It took a while before I paused from skipping ahead, and considered what a possible solution could be and how I can implement that. While imperfect, the current solution works and I was able to extract the data from XML to tibble format making it ready for more complex data wrangling and analysis.
 
-<img class=" size-full wp-image-77 aligncenter" src="https://elimumwalimu.files.wordpress.com/2018/07/july4.png" alt="july4" width="500" height="525" />
+<img src="https://elimumwalimu.files.wordpress.com/2018/07/july4.png" alt="july4" width="500" height="525" />
 
 In conclusion, here are some wins:
 <ol>

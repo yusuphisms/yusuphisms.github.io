@@ -40,9 +40,10 @@ On average, private schools have almost 4 times more unqualified female teachers
 
 There are far more 0s in the vectors than one would reasonably expect! But we can make sense of this strangeness. Part of the survey design was that schools self-reported their numbers of qualified teachers. When counting the distribution of answers you can begin to suspect a human's hand in the data (note the 0, 1, .25, .33, .5, etc. in the <em>prop</em> column).
 
-&nbsp;
-
-[gallery ids="69,70" columns="2" size="medium"]
+<container style="display:flex;flex-wrap:wrap;justify-content:space-between;align-content:space-between">
+	<img class=" size-full wp-image-68 aligncenter" src="https://elimumwalimu.files.wordpress.com/2018/06/blog6.png" alt="blog6"/>
+	<img class=" size-full wp-image-68 aligncenter" src="https://elimumwalimu.files.wordpress.com/2018/06/blog7.png" alt="blog7"/>
+</container>
 
 Many schools reported that all their teachers are "qualified". With no clear sense of what it means to be qualified and likely no validation/confirmation process by the government, there is a hidden incentive to claim all of the school's teachers are qualified
 even if this may not be true. On the topic of inaccurate data, note how high the number of NaNs are for female teachers. Several explanations could hold water for these missing values and none are particularly encouraging:

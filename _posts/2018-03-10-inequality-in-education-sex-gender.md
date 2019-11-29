@@ -6,12 +6,6 @@ author: Yusuph Mkangara
 comments: true
 categories: [Education, girls, international women day, Python]
 ---
-<div id="notebook" class="border-box-sizing">
-<div id="notebook-container" class="container">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-
 For International Women's Day, I was inspired by tweets that zeroed in on women - more so than usual anyway. I am a day late because leading up to that, I was focused on analyzing this particular dataset for finding regional variances (sneak peak of that in the output). My interest was mostly at the nexus of place and education in Tanzania and how using such data can create a more targeted organizational approach to tackling the toughest educational inequalities.
 
 One such inequality is between the sexes. No patience for punchlines here: <strong>educational outcomes for Tanzanian girls are unequal compared to their counterparts.</strong>
@@ -20,9 +14,6 @@ We already have some indication across the board of what levers the government (
 
 I have been giving Jupyter a second try (usually a PyCharm faithful). I can see why people love it so much, especially since I can export to HTML and paste to my blog. Find <a href="https://github.com/yo-my-bard/Scraping-NECTA/blob/master/Womens_Day_Models_Analysis.ipynb">my notebook and analysis</a> in my GitHub account! First, we read in our data using pandas and clean out some N/A values. For this quick analysis, I look at two categorical variables: Sex and Regions. I already dummy coded Sex (Female = 1, Male = 0) when cleaning up the scraped data, but pandas can also dummy code all 25 regions. Statsmodels' ols function does this step for you as well when fitting your model so I opt for this instead. (Many thanks to <a href="https://www.scipy-lectures.org/packages/statistics/auto_examples/plot_regression_3d.html" target="_blank" rel="noopener">scipy-lectures</a> for their tutorial on setting this up using ols).
 
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="inner_cell">
@@ -125,17 +116,7 @@ Boys' Median Calculated Average Score: 2.6
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt"></div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 
 The results show the regression taking into account regions. However, all else equal, girls on average scored -0.13 less on their calculated average score. Consequently, assuming a score of 3 (2.5+) is passing, the magnitude could very well be the difference between passing and failing the exam. I feel that this needs some reiteration: because of the system as currently implemented, being <em>born a girl</em> could have been the difference between passing or failing the PSLE in 2013. Of course, I am oversimplifying the issue, but the issue does boggle the mind.
 
 Recently, PSLE is no longer a barrier to attending secondary education. However, the fight is not won as other discriminatory practices have taken its place (e.g. <a href="https://www.theguardian.com/global-development/2017/jun/30/tanzania-president-ban-pregnant-girls-from-school-john-magufuli">banning once pregnant girls from continuing their education</a>). Unfortunately, this discussion is still very high level. I'm going to continue to piece together data that might give more actionable items to close these gaps. In the meantime, check the work of good people like <a href="https://twitter.com/dropwall_" target="_blank" rel="noopener">Dropwall</a> (<a href="http://www.eagleanalytics.co.tz/" target="_blank" rel="noopener">eagleanalytics.co.tz</a>) who are working on a system that predicts potential dropouts. Literature shows that the issues they are finding are of acute importance to girls.
-
-</div>
-</div>
-</div>
-</div>
-</div>

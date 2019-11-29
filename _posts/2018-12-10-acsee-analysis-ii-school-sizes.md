@@ -29,7 +29,9 @@ Though imperfect and arbitrary, the new tiers suggest that the schools within ea
 
 Even with these new size tiers, there are no substantial differences in passing rates. The largest size schools tier, 300-900, did present with a higher percentage of Div III results than Div II results which is a reversal from the other tiers suggesting some adverse effects as size increases. However, even there, the sole school with more than 600 candidates (~830) is likely an outlier and is affecting the distribution. The highest share of passing rates seems to be within the 75-100 group suggesting that it may be the most optimal size for being a successful school.
 
-[caption id="attachment_120" align="alignnone" width="720"]<img class="alignnone size-full wp-image-120" src="https://elimumwalimu.files.wordpress.com/2018/11/new_tiers_div_percentage_dist.png" alt="new_tiers_div_percentage_dist" width="720" height="1440" /> % of Students in Each Division[/caption]
+<img class="alignnone size-full wp-image-120" src="https://elimumwalimu.files.wordpress.com/2018/11/new_tiers_div_percentage_dist.png" alt="new_tiers_div_percentage_dist" width="720" height="1440" /> 
+
+_% of Students in Each Division_
 
 To round out this post, I wanted to connect back to what's been driving this analysis. The three top performing regions (Mtwara, Lindi, Geita in that order) were a surprise to me. Moreover, it's not clear to me what the ingredient for success is from 2018's results. Had Dar es Salaam or Mwanza performed well, I might think that money and urbanization matters, but the commonly thought-of as urbanized regions did not perform well. At this point, it seems that 75-100 tier schools performed slightly better than others. I performed a chi-squared test and found statistically significant results showing 75-100 performs differently than the larger tiers (the passing rate suggests that they perform better on average). However, against smaller schools the results were mixed and we failed to reject the hypothesis that they perform equally as well as smaller schools.
 
@@ -37,12 +39,12 @@ Given this, I thought, perhaps this tier is the driving force behind the top per
 
 I'll end with the featured image of this post:
 
-[caption id="attachment_121" align="alignnone" width="1440"]<img class="alignnone size-full wp-image-121" src="https://elimumwalimu.files.wordpress.com/2018/11/passing_rates_size_tier_increase.jpg" alt="passing_rates_size_tier_increase" width="1440" height="720" /> Candidate Passing Rates as School Tier Size Increases[/caption]
+<img class="alignnone size-full wp-image-121" src="https://elimumwalimu.files.wordpress.com/2018/11/passing_rates_size_tier_increase.jpg" alt="passing_rates_size_tier_increase" width="1150" height="720" /> 
+
+_Candidate Passing Rates as School Tier Size Increases_
 
 Each line represents a region in Tanzania. There is a small peak at 75-100 for a lot of regions and a downward slope toward either end. I interpret this as suggesting that student performance does not benefit from having too few students nor too many students. There are other factors at play here, ones that particularly correlate with school size such as smaller schools likely having fewer resources. However, a functional interpretation might be about how students adapt to high stakes testing among each other. Having too few students means it is harder to find another student that can help one study the material, and having too many students may have a similar effect on getting help in general (either from the teacher or other students). The 75-100 tier schools fall somewhere in the middle. Granted, not all 75-100 tier schools are created equal. Nonetheless, this exercise illustrates some of the challenges for managing schools across diverse regions.
 
-&nbsp;
-
 <em>Edit 12/10/2018</em>: Received feedback about clarifying the last plot. Here's a plot that draws attention to individual regions:
 
-<img class=" size-full wp-image-126 aligncenter" src="https://elimumwalimu.files.wordpress.com/2018/12/passing_rate_tier_size_2.jpg" alt="passing_rate_tier_size_2" width="12000" height="18000" />
+<img class=" size-full wp-image-126 aligncenter" src="https://elimumwalimu.files.wordpress.com/2018/12/passing_rate_tier_size_2.jpg" alt="passing_rate_tier_size_2" width="1400" height="1620" />
