@@ -7,3 +7,10 @@
     text-align: center;
     text-decoration: underline;
 }
+
+.navposts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}

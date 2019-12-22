@@ -1,9 +1,11 @@
 ---
 layout: default
 title: Yusuph's Musings
+pagination:
+    enabled: true
 ---
 <h1>{{ page.title }}</h1>
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <div>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     <p>{{ post.date | date_to_long_string }}</p>
@@ -13,3 +15,18 @@ title: Yusuph's Musings
 </div>
 <hr style="background-color: teal;border-width:5px">
 {% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="navposts">
+    {% if paginator.previous_page %}
+    <span class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </span>
+    {% endif %}
+    {% if paginator.next_page %}
+    <span class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </span>
+    {% endif %}
+</div>
+{% endif %}

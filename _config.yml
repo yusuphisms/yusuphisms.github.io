@@ -1,3 +1,13 @@
 name: Yusuph
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+plugins: [jekyll-paginate-v2]
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  title: ':title'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
