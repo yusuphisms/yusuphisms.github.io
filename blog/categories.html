@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% assign ordered_cats = "" | split: "" %}
+{%for category in site.categories %}
+    {% assign ordered_cats = ordered_cats | push: category[0] %}
+{% endfor %}
+{% assign sorted_cats = ordered_cats | sort_natural %}
+{% for cat in sorted_cats %}
+  <h3 id="{{ category[0] }}">{{ cat | downcase }}</h3>
+  <ul>
+    {% for category in site.categories %}
+        {% if category[0] == cat %}
+            {% for post in category[1] %}
+            <li><a href="{{ post.url }}">({{ post.date | date_to_string }}) {{ post.title }}</a></li>
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+  </ul>
+{% endfor %}

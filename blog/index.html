@@ -2,7 +2,9 @@
 layout: default
 title: Yusuph's Musings
 ---
-<h1>{{ page.title }}</h1>
+<div>
+    <h1 style="display: inline-block">{{ page.title }} </h1>  <h6 style="display: inline-block">[<a href=/blog/categories.html>All Blog Categories</a>]</h6>
+</div>
 {% for post in paginator.posts %}
 <div>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
