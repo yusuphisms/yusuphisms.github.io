@@ -7,7 +7,7 @@ layout: default
 {% endfor %}
 {% assign sorted_cats = ordered_cats | sort_natural %}
 {% for cat in sorted_cats %}
-  <h3 id="{{ category[0] }}">{{ cat | downcase }}</h3>
+  <h3 id="{{ cat | downcase | replace: ' ', '_' }}">{{ cat | downcase }}</h3>
   <ul>
     {% for category in site.categories %}
         {% if category[0] == cat %}
