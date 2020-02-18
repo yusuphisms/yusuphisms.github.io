@@ -1,0 +1,31 @@
+---
+layout: feed
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>Yusuph's Musings</title>
+	<link href="https://yusuph.dev/blog/atom.xml" rel="self"/>
+	<link href="https://yusuph.dev/blog"/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>https://yusuph.dev/blog</id>
+	<author>
+		<name>Yusuph Mkangara</name>
+		<email>yusuph.mka@gmail.com</email>
+	</author>
+
+	{% for post in site.posts %}
+		<entry>
+			<title>{{ post.title }}</title>
+			<link href="https://yusuph.dev{{ post.url }}"/>
+			<updated>{{ post.date | date_to_xmlschema }}</updated>
+			<id>https://yusuph.dev{{ post.id }}</id>
+            <content type="html"> 
+            {% if post.content contains "<!--more-->" %}
+            {{ post.content | split:"<!--more-->" | first | xml_escape}}
+            {% endif %}
+            </content>
+		</entry>
+	{% endfor %}
+
+</feed>
