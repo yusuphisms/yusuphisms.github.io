@@ -2,18 +2,20 @@
 layout: default
 title: Yusuph's Musings
 ---
-<div>
-    <h1 style="display: inline-block">{{ page.title }} </h1>  <h6 style="display: inline-block">[<a href=/blog/categories.html>All Blog Categories</a>]</h6>
+<div class="blog-header">
+    <h1>{{ page.title }} </h1>  <h5>[<a href=/blog/categories.html>All Blog Categories</a>]</h5>
 </div>
 {% for post in paginator.posts %}
-<div>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    <p>{{ post.date | date_to_long_string }}</p>
+<div class="post-container">
+    <a class="post-title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    <p class="post-date">{{ post.date | date_to_long_string }}</p>
     {% if post.content contains "<!--more-->" %}
-    <p>{{ post.content | split:"<!--more-->" | first }}  <a href="{{ post.url }}"><i>Read More...</i></a></p>
+    <div class="post-preview">
+        {{ post.content | split:"<!--more-->" | first }}  <a href="{{ post.url }}"><i>Read More...</i></a>
+    </div>
     {% endif %}
-</div>
-<hr style="background-color: teal;border-width:5px">
+</div> 
+<post-sep class="post-preview-separator"></post-sep>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}

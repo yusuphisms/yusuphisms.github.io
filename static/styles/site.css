@@ -1,0 +1,155 @@
+/*
+Color Scheme based on navbar background color
+#fdd8be obama tan suit
+Hex 2:  #C3FDBE pastel teal    
+Hex 3:  #BEFDD8 aquamarine
+Hex 4:  #BEFDF8 pastel light blue
+Hex 5:  #BEE3FD pastel darker blue
+Hex 6:  #BEC3FD pastel navy/purple
+Hex 7:  #D8BEFD pastel purple
+Hex 8:  #F8BEFD pastel pink
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Borrowed from Bootstrap mostly */
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #f8e8dc;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+code {
+    font-size: 87.5%;
+    color: #e83e8c;
+    word-break: break-word;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Navbar */
+
+.navbar-wrapper {
+    background-color: #fdd8be;
+    margin: -8 -8 0 -8;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#navbar {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #2b0000;
+}
+
+#navbar > a {
+    padding: 20px;
+    font-size: 30px;
+    font-family: 'Lacquer', sans-serif;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+#navbar li {
+    display: inline;
+    flex-grow: 1;
+    font-family: Helvetica, sans-serif;
+    padding-right: 20px;
+}
+
+#navbar li a {
+    font-weight: none;
+    font-size: 20px;
+}
+
+
+/* blog/index.html */
+
+.blog-header h1, h5 {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.post-container {
+    padding-top: 20px;
+}
+
+post-sep {
+    border: medium solid #BEE3FD;
+    width: 100%;
+    display: inline-block;
+}
+
+post-sep:last-of-type {
+    display: none;
+}
+
+.post-preview p {
+    margin-bottom: 0;
+}
+
+.post-date {
+    margin-top: 0;
+}
+
+.navposts {
+    padding-top: 10px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+/* Responsivenessicity */
+
+@media screen and (min-width: 576px){
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container {
+        max-width: 960px;
+    }
+}
