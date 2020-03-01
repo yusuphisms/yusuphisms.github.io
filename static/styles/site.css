@@ -1,6 +1,7 @@
 /*
 Color Scheme based on navbar background color
 #fdd8be obama tan suit
+#f8e8dc obama tan suit background
 Hex 2:  #C3FDBE pastel teal    
 Hex 3:  #BEFDD8 aquamarine
 Hex 4:  #BEFDF8 pastel light blue
@@ -26,7 +27,7 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #f8e8dc;
+    background-color: #fff;
 }
 
 a {
@@ -44,8 +45,6 @@ code {
 
 .container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -105,10 +104,13 @@ code {
 }
 
 .post-container {
-    padding-top: 20px;
+    padding: 20px;
+    border: 2px solid #f8e8dc;
+    box-shadow: 3px 3px #f8e8dc;
+    margin-bottom: 2%;
 }
 
-post-sep {
+/* post-sep {
     border: medium solid #BEE3FD;
     width: 100%;
     display: inline-block;
@@ -116,7 +118,7 @@ post-sep {
 
 post-sep:last-of-type {
     display: none;
-}
+} */
 
 .post-preview p {
     margin-bottom: 0;
@@ -138,18 +140,18 @@ post-sep:last-of-type {
 
 @media screen and (min-width: 576px){
     .container {
-        max-width: 540px;
+        max-width: 85%;
     }
 }
 
 @media screen and (min-width: 768px){
     .container {
-        max-width: 720px;
+        max-width: 85%;
     }
 }
 
 @media screen and (min-width: 992px){
     .container {
-        max-width: 960px;
+        max-width: 85%;
     }
 }
