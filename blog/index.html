@@ -2,11 +2,11 @@
 layout: default
 title: Yusuph's Musings
 ---
-<div class="blog-header">
+<header class="blog-header">
     <h1>{{ page.title }} </h1>  <h5>[<a href=/blog/categories.html>All Blog Categories</a>]</h5>
-</div>
+</header>
 {% for post in paginator.posts %}
-<div class="post-container">
+<section class="post-container">
     <a class="post-title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     <p class="post-date">{{ post.date | date_to_long_string }}</p>
     {% if post.content contains "<!--more-->" %}
@@ -14,7 +14,7 @@ title: Yusuph's Musings
         {{ post.content | split:"<!--more-->" | first }}  <a href="{{ post.url }}"><i>Read More...</i></a>
     </div>
     {% endif %}
-</div> 
+</section> 
 <!-- <post-sep class="post-preview-separator"></post-sep> -->
 {% endfor %}
 
