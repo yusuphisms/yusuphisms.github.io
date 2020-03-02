@@ -105,3 +105,6 @@ venv.bak/
 
 #jekyll
 _site/
+.jekyll-cache/
+
+.DS_Store
