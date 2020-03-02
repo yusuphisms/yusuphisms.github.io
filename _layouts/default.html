@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/styles/site.css">
 
     <!-- Input a title-->
@@ -13,8 +14,15 @@
   </head>
   <body>
     <div class="navbar-wrapper">
-      <div id="navbar">
-          <a href="/index.html">Yusuph Mkangara</a>
+      <nav id="navbar">
+          <div class="navbar-title">
+            <a href="/index.html">Yusuph Mkangara</a>
+            <div class="navbar-social-icons">
+              <a href="https://github.com/yo-my-bard"> <i class="fab fa-github"></i> </a>
+              <a href="https://twitter.com/Yusuphisms"> <i class="fab fa-twitter"></i> </a> 
+              <a href="https://www.linkedin.com/in/yusuph-mkangara/"> <i class="fab fa-linkedin"></i> </a>
+            </div>
+          </div>
           <ul>
               <li>
                   <a href="/index.html">Home</a>
@@ -26,12 +34,12 @@
                   <a href="/blog/index.html">Blog</a>
               </li>
           </ul>
-      </div>
+      </nav>
   </div>
 
-    <div class="container">
+    <section class="container">
     {{ content }}
-    </div>
+    </section>
 
     <script src='/static/scripts/site.js'></script>
   </body>
