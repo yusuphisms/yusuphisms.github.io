@@ -48,7 +48,7 @@ section h1 {
 }
 
 .container {
-    width: 100%;
+    width: 85%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -178,20 +178,20 @@ post-sep:last-of-type {
 
 /* Responsivenessicity */
 
-@media screen and (min-width: 576px){
+@media screen and (max-width: 850px){
     .container {
         max-width: 85%;
     }
-}
 
-@media screen and (min-width: 768px){
-    .container {
-        max-width: 85%;
+    .about-me {
+        padding-top: 20px;
     }
-}
-
-@media screen and (min-width: 992px){
-    .container {
-        max-width: 85%;
+    
+    .about-me img {
+        height: 400px;
+    }
+    
+    .about-me-text {
+        display: inline-block;
     }
 }
