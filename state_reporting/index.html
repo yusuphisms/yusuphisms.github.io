@@ -1,0 +1,23 @@
+---
+layout: default
+title: K-12 State Reporting
+---
+<header class="blog-header">
+    <h1>{{ page.title }} </h1>
+</header>
+
+{% for category in site.categories %}
+{% if category[0] == "State Reporting" %}
+{% for post in category[1] %}
+<section class="post-container">
+    <a class="post-title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    <p class="post-date">{{ post.date | date_to_long_string }}</p>
+    {% if post.content contains "<!--more-->" %}
+    <div class="post-preview">
+        {{ post.content | split:"<!--more-->" | first }}  <a href="{{ post.url }}"><i>Read More...</i></a>
+    </div>
+    {% endif %}
+</section>
+{% endfor %}
+{% endif %}
+{% endfor %}
