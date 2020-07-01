@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Fortune at the Flood: I'm So Lucky To Have Done K-12 State Reporting"
+date: 2020-06-30
+categories: [State Reporting]
+---
+As I'm writing this post, I have a lot of feelings. As influential as the books I read in high school English classes were, I feel like it's high time to start building a new post-college folklore of literary references. Metaphors are my jam and I'm going to need this new base when I'm a true sophistaratchet in my mid-30s. I'm feeling a rich blend of joy and gratitude. I'm feeling sad and incomplete. I'm feeling apprehensive about the future, but also like pleasantly anticipatory. In sum, I feel really fortunate to have taken K-12 state reporting [at the flood when the tide came](https://www.sparknotes.com/shakespeare/juliuscaesar/quotes/page/4/) in the Fall of 2018.
+<!--more-->
+## Joy and Gratitude
+["Joy and _pain_ are like sunshine and rain"](https://www.youtube.com/watch?v=RGKODhMyw20). While there were definitely moments of pain during this hard work, I want to take a moment to remember how much joy I had as I did state reporting these past two years:
+- My first submission to the state. I was hella nervous and didn't want to mess it up. I'll never forget my manager sending an email that it was the first step in a 1000 submissions. I can't fact-check whether I made it to 1000, but I certainly had my fair share of submissions.
+- That first Selenium automation that saves you from doing 1000 clicks. Ain't nothing quite like it. That smug, feelin' yourself feeling. Honestly, never gets old.
+- My first attempt at building a library with [ducttape-calpads](https://github.com/SummitPublicSchools/ducttape-calpads). I really loved that it was the first time I built something that I felt confident enough to share with the world. Like hey, I did a thing! And maybe you can use it too?!
+- My second attempt at a library with [the calpads Web API wrapper](https://github.com/SummitPublicSchools/calpads) literally brought me to tears. A couple of years of tinkering and learning culminated in this and I can't help but be fond of this one.
+
+I'm thankful for the many things that state reporting brought to me - particularly the humans I was blessed to work with who stuck it out with me as I fumbled my way through the 2 years. I could talk on and on about how my interactions with them forced me to grow in small and large ways. However, I want to take this time to say how thankful I am that someone looked at my resume, 1 year out of college, and took a chance on me to lead one of the most crucial aspects of their organization. That's unheard of and I take it as nothing short of an incredible privilege that my background garners that kind of support and trust. That kind of support and affirmation is how many careers are born and I don't take it lightly that I'm in this position. I hope to one day be in a position to do the same for someone else.
+
+## Sad and Incomplete
+I tried to bury the lede here. This reflection post is because my journey through state reporting is coming to a temporary end. I feel sad and incomplete because I really poured a lot of myself into making coolness happen here, and yet there are many more miles to go. Part of me wants to find ways to still do it in pieces and maybe an opportunity for that will come at a later time. This is now the second time I parted ways with teammates that were so essential to my growth, as a worker and a being. There's a sadness there that's hard to place and harder to erase. Did I do enough in transitioning the work for them? Did I do right by them? I'll never know. I truly gave it as much of me as I could and possibly more than I should. It wasn't perfect work, but it was me, and my work. With that realization, I can rest easy and keep cheering my teammates on from the sidelines.
+
+## Apprehensive yet Anticipatory
+Every journey's end is another's beginning right? I'm scared as all get out but if all goes well, I'll be deep into the next stage of life by mid-July. I worry that I have taken a leap of faith without looking down. But that's the thing right? I'm not looking down because I know where the goalposts are: forward. I have to ground myself during this window, to fortify my faith. That's why I'm really excited to try to create that new folklore for myself - a ground truth to heed during the turbulent times ahead. In the meantime, I still think if I can manage a blog post a month for the rest of this year, I can let mama know I've made it as a writer and the Pulitzer is as good as mine.
