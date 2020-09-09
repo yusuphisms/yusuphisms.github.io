@@ -114,6 +114,9 @@ section h1 {
 
 .about-me {
     padding-top: 20px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
 }
 
 .about-me img {
@@ -123,9 +126,11 @@ section h1 {
 }
 
 .about-me-text {
-    display: block;
-    margin: auto;
+    display: flex;
+    margin-right: 20%;
     overflow: auto;
+    flex-direction: column;
+    align-content: center;
 }
 
 /* blog/index.html */
@@ -185,6 +190,7 @@ post-sep:last-of-type {
 
     .about-me {
         padding-top: 20px;
+        display: block;
     }
     
     .about-me img {
