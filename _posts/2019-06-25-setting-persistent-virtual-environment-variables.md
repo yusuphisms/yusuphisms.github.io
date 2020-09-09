@@ -4,7 +4,7 @@ title: Setting Persistent Virtual Environment Variables
 date: 2019-06-25 05:33
 author: Yusuph Mkangara
 comments: true
-categories: [Python]
+tags: [Python]
 ---
 Reviving ye ole blog with a non-analytical piece. Summer of Data Science is back again -- follow along and join us on Twitter <a href="https://twitter.com/hashtag/SoDS19?src=hash" target="_blank" rel="noopener">#SoDS19</a>
 

@@ -4,7 +4,7 @@ title: "Inequality in Education: Place Matters"
 date: 2018-04-04 05:38
 author: Yusuph Mkangara
 comments: true
-categories: [Education, inequality, place, Python, spatial analysis]
+tags: [Education, inequality, place, Python, spatial analysis]
 ---
 During my time in school, I became fascinated by this notion that place matters. It is an obvious idea five minutes into thinking about it. However, when explicitly declared, it is one of the most revolutionary ideas in the study of human life. It's particularly interesting when tackling spatial analysis on topics that one wouldn't (and shouldn't be expected to!) assume to be at all related to one's physical location in life. One such topic is education. While the "zip code shouldn't matter" movement in education has a strong foundation in the USA, I feel that we need a deeper look at how we can translate these same principles to a discourse on spatial inequality in Tanzania and other developing countries. My goal for this post is to "put education in its place" - that is, how we can begin to understand if place matters, the extent to which it matters, and how we might use those insights to most effectively intervene in the education sector.
 

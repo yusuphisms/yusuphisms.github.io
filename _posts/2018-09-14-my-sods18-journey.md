@@ -4,7 +4,7 @@ title: "My #SoDS18 Journey"
 date: 2018-09-14 01:43
 author: Yusuph Mkangara
 comments: true
-categories: [General]
+tags: [General]
 ---
 Life for me ain't been no crystal stair...
 

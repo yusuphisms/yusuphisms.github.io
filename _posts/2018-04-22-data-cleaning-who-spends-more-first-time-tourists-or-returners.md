@@ -4,7 +4,7 @@ title: "Data Cleaning: Who Spends More? First Time Tourists or Returners?"
 date: 2018-04-22 18:48
 author: Yusuph Mkangara
 comments: true
-categories: [Python, Tourism]
+tags: [Python, Tourism]
 ---
 Deviating from my usual focus on education and some health analyses on the side, I wanted to find an interesting-to-me dataset in the government open data portal that I might dive into. In the past, I have been somewhat curious about tourism in the country and whether that market is ripe for innovation. My last grand idea was a one-stop shop for all tourists prior to and during their stay in Tanzania. Turns out <a href="https://itunes.apple.com/us/app/triposo/id467053028?mt=8">Triposo</a> pretty much has that covered. So for now, I tried a more humble approach of asking questions.
 <blockquote>Based on the 2014 Tourism Survey, can we determine who spends more while in Tanzania: first time tourists or returners?</blockquote>

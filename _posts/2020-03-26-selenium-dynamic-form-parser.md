@@ -2,7 +2,7 @@
 layout: post
 title: "Function Follows Form: An Approach to Dynamically Parsing and Filling HTML Forms Using Selenium"
 date: 2020-03-26
-categories: [Python, Selenium, Automation]
+tags: [Python, Selenium, Automation]
 ---
 For this post, I'm writing about a process in which I pieced together puzzle pieces as I went along.
 

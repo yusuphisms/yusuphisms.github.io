@@ -4,7 +4,7 @@ title: "ACSEE Analysis I: Reproducing Results"
 date: 2018-11-21 19:13
 author: Yusuph Mkangara
 comments: true
-categories: [Education, Python]
+tags: [Education, Python]
 ---
 After publishing my previous post, I took to Twitter to declare my desire to "ponder less, and push myself more" - an alliterative variation of a bias for action. For the last two months, I have focused on publishing Amazon skills. The process of publishing skills also provided ample opportunity for introspection. I've been thinking about what made me excited when I was growing up. So far, I think building things and creativity are central to who I am as a learner. At the tail end of high school, that meant constructing narratives in meter while thinking I wanted to be an engineer or doctor. Now that I'm leaning toward a STEM-like career again, I find the basis of commonality between my different stages so far lies somewhere in this amorphous notion of creative building. I engage fully with projects that allow me to be creative and to tinker with the solution and thankfully for me, programming has been a pleasant outlet for this work. To bring it back to the topic at hand, I am on Thanksgiving break this week and wanted to find something that I could use to practice coding. I didn't have a clear idea for something like a Skill and so I spent the first two days of the break desperately trying to write a wrapper for some common matplotlib plots for work. After electing to close up shop on that work, I felt unsatisfied and a little lost on what I could do next. Fortunately, I keep breadcrumbs of projects/ideas; a personal Trello board and Twitter are my favorite organization tools at the moment.<!--more-->
 

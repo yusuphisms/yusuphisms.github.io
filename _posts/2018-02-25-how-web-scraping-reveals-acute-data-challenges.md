@@ -4,7 +4,7 @@ title: How Web Scraping Reveals Acute Data Challenges
 date: 2018-02-25 07:08
 author: Yusuph Mkangara
 comments: true
-categories: [data, development, Education, Python, scraping, tanzania]
+tags: [data, development, Education, Python, scraping, tanzania]
 ---
 Needing a centralized location for Tanzanian education data and national exams data, I built a web scraper in Python to collect the data. I describe my experience in this post as well as future steps. <a href="https://github.com/yo-my-bard/Scraping-NECTA">Here is the scraper's GitHub repository</a>.
 

@@ -4,7 +4,7 @@ title: Qualifying Qualified Teachers in Tanzania
 date: 2018-06-22 03:19
 author: Yusuph Mkangara
 comments: true
-categories: [Education, R, teachers]
+tags: [Education, R, teachers]
 ---
 It's been longer than I expected since my last post (I try to do one per month). But I promise, I've been hustling and have some "unpublished" (read: unblogged) work in the works. For this analysis, I downloaded data from <a href="http://opendata.go.tz">opendata.go.tz</a> related to secondary education. I wanted to employ some concepts from <a href="http://r4ds.had.co.nz/">R for Data Science's</a> first section - mainly piping and visualizations! I didn't really have a preference for the data I worked with, but I chose to stick to my love of education statistics from Tanzania. For this post, we'll look at a relatively <a href="http://opendata.go.tz/dataset/29a40037-74a7-4c75-ab07-0ecf6e26e32a/resource/f5cd790c-49db-4dfc-bc44-3ced67c6975a/download/Consolidated-Secondary-Data-with-grade.csv">small data set</a> that offers some insight on secondary school pass rates and the teacher population. <!--more-->
 

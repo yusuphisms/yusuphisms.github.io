@@ -2,7 +2,7 @@
 layout: post
 title: "Divergence Into Networking and the CALPADS Web API"
 date: 2020-05-19
-categories: [Data Engineering, State Reporting]
+tags: [Data Engineering, State Reporting]
 ---
 The grind of life post COVID-19 had taken its toll on my existence. Gratefully, I did not have any serious issues, but I could tell something about this new era of living was wearing me down. I was less energetic in odd ways, but most notably I just *felt* less creative. I even started wondering if this is what burnout feels like. In some ways, maybe I did need to step back. Fortunately, it didn't last long before a magnetic creative energy was pulling me in a different direction. This time, it was a winding educational journey to a pretty exciting rest stop.
 <!--more-->
