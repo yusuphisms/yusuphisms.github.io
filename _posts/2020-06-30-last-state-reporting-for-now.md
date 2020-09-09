@@ -2,7 +2,7 @@
 layout: post
 title: "Fortune at the Flood: I'm So Lucky To Have Done K-12 State Reporting"
 date: 2020-06-30
-categories: [State Reporting]
+tags: [State Reporting]
 ---
 As I'm writing this post, I have a lot of feelings. As influential as the books I read in high school English classes were, I feel like it's high time to start building a new post-college folklore of literary references. Metaphors are my jam and I'm going to need this new base when I'm a true sophistaratchet in my mid-30s. I'm feeling a rich blend of joy and gratitude. I'm feeling sad and incomplete. I'm feeling apprehensive about the future, but also like pleasantly anticipatory. In sum, I feel really fortunate to have taken K-12 state reporting [at the flood when the tide came](https://www.sparknotes.com/shakespeare/juliuscaesar/quotes/page/4/) in the Fall of 2018.
 <!--more-->

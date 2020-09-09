@@ -2,7 +2,7 @@
 layout: post
 title: "My First DAG or If Your Dreams Don't Scare You"
 date: 2020-02-17
-categories: [Data Engineering, State Reporting]
+tags: [Data Engineering, State Reporting]
 ---
 I just came back from visiting family in Tanzania and I feel that the big themes in my trip were courage and fearlessness. I think of these as two sides of the same coin. Without both sides, the value of the coin, in my opinion, depreciates. I believe one can be courageous, but be ruled by fear; and similarly one can be fearless but [lack gall](https://www.sparknotes.com/nofear/shakespeare/hamlet/page_130/). I came back to work with these two themes in mind. I wanted to be bold in my work this year because if your dreams don't scare you, they are not big enough. <!--more-->
 

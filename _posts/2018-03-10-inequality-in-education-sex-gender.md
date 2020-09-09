@@ -4,7 +4,7 @@ title: "Inequality in Education: Sex/Gender"
 date: 2018-03-10 04:38
 author: Yusuph Mkangara
 comments: true
-categories: [Education, girls, international women day, Python]
+tags: [Education, girls, international women day, Python]
 ---
 For International Women's Day, I was inspired by tweets that zeroed in on women - more so than usual anyway. I am a day late because leading up to that, I was focused on analyzing this particular dataset for finding regional variances (sneak peak of that in the output). My interest was mostly at the nexus of place and education in Tanzania and how using such data can create a more targeted organizational approach to tackling the toughest educational inequalities.
 

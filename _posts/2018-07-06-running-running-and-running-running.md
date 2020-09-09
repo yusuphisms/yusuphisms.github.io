@@ -4,7 +4,7 @@ title: Running Running and Running Running
 date: 2018-07-06 16:23
 author: Yusuph Mkangara
 comments: true
-categories: [garmin, Hardware, R, running]
+tags: [garmin, Hardware, R, running]
 ---
 One semester in college, I walked past the basement where unwanted goods are often stored. I am definitely always in need of more unwanted tech much to the dismay of family and friends. However, one time I walked by and saw a <a href="https://www.amazon.com/Garmin-Forerunner-Receiver-Discontinued-Manufacturer/dp/B000CSWCQA/ref=sr_1_2?ie=UTF8&amp;qid=1530841957&amp;sr=8-2&amp;keywords=forerunner+305">Garmin Forerunner 305</a> - a GPS enabled exercise watch. It's clunky, but almost in mint condition. I charged it back up and strapped on the heart rate monitor (the real prize here!). I only lamented that due to its age, the Forerunner was not compatible with Garmin's mobile data sync technology. I thought I'd be forced to just use the desktop version of the software with very little customization. Happy to say that I've since re-engaged with R and Python, and have now freed the data and got it running for me.<!--more-->
 

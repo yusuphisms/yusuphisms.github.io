@@ -2,7 +2,7 @@
 layout: post
 title: "An Imaginative Journey Deeper Into K-12 State Reporting"
 date: 2020-01-03
-categories: [Data Engineering, State Reporting]
+tags: [Data Engineering, State Reporting]
 ---
 It's the third day of the new decade and I'm feeling good, Nina Simone. Before 2019 closed out, I had a chance to listen to [a talk on the Future of Data Engineering](https://www.infoq.com/presentations/data-engineering-pipelines-warehouses/) and I had just watched [another nice prose-like approach](https://www.youtube.com/watch?v=4iDjegukrkI) to explaining Airflow. I was most drawn to how they talked about their data engineering journey in stages and I want to emulate that with my current work in K-12 state reporting. <!--more-->
 

@@ -4,7 +4,7 @@ title: "New Dataset: Tanzanian 2018 A-Level Exam Results"
 date: 2018-08-11 21:48
 author: Yusuph Mkangara
 comments: true
-categories: [business, Education, entrepreneur, Python, tanzania]
+tags: [business, Education, entrepreneur, Python, tanzania]
 ---
 There is not much new about this blog post. I had been putting off scraping the <a href="https://www.necta.go.tz/acsee_results">A-Level data from the NECTA</a> website because the data was structured in an intimidating fashion. I decided I could no longer wait after seeing this <a href="http://www.thecitizen.co.tz/magazine/success/-Understanding-Form-Six-regional-results-puzzle/1843788-4690616-rcjhhd/index.html">relatively shocking article</a> on the results of the exam. So, employing the scraping tools I have talked about <a href="https://elimumwalimu.wordpress.com/2018/02/25/how-web-scraping-reveals-acute-data-challenges/">here</a> to a similar problem, I can now announce that the <a href="https://github.com/yo-my-bard/Scraping-NECTA/blob/master/TZ_A-Level_Results_Scraper.ipynb">scraper code is on GitHub</a>! While not every available year's data is up yet (should be coming soon, the <a href="https://github.com/yo-my-bard/Scraping-NECTA/blob/master/CompleteDatasets/necta_acsee_2018.csv">data from 2018 is now available on GitHub</a> too.<!--more-->
 

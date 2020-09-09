@@ -4,7 +4,7 @@ title: "ACSEE Analysis II: School Sizes"
 date: 2018-12-10 09:16
 author: Yusuph Mkangara
 comments: true
-categories: [Education, Python]
+tags: [Education, Python]
 ---
 In this second installment, I spent some time digging deeper into school sizes. Having spent a year working in a charter school in New York, I noticed the attention to regulating class sizes and the sheer number of small schools that share buildings in the city. As it turns out, the lived experiences of millions of students have historical precedence, both <a href="http://www.edlawcenter.org/assets/files/pdfs/publications/Reducing%20Class%20Size%20in%20NYC%20-%20Promise%20vs.%20Practice.pdf" target="_blank" rel="noopener">legal</a> and <a href="https://www.gatesfoundation.org/Media-Center/Press-Releases/2003/09/New-York-City-Department-of-Education-Receives-Grant" target="_blank" rel="noopener">financial/philanthropic</a>.  I don't plan to dive deeply into the merits or lack thereof of smaller classroom sizes and smaller schools in general, but it's clear that there is a belief that smaller schools/classrooms ought to do better than crowded educational institutions. I'm not sure whether there is a clear cut answer there. However, to a layman, a smaller classroom should mean more focus on individual students and a more manageable workload for a teacher in supporting students. With this assumption in mind, I sought to check if school sizes matter in the performance of the ACSEE in Tanzania.
 

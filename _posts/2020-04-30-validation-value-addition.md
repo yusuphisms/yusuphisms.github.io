@@ -2,7 +2,7 @@
 layout: post
 title: "Validation Value Addition: Adopting Target's Data Validator"
 date: 2020-04-30
-categories: [Data Engineering, State Reporting]
+tags: [Data Engineering, State Reporting]
 ---
 I really enjoy watching Python/data related presentations/conferences etc. The topics are a boon and my latest inspiration is from the fascinating work happening at [Target with their data validator](https://github.com/target/data-validator) ([Video of Presentation](https://www.youtube.com/watch?v=LTeZoo6kEBQ)). There were a few things I was looking for when developing an approach to data validation:
 - A Framework: something that would give structure to the raw, ad-hoc way of doing things
