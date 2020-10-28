@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A Scala Love Story: The Annotated Prologue"
-date: 2020-06-30
+date: 2020-10-27
 tags: [Scala, Annotated]
 ---
 I coded in Python for a long time and it was my first love. To be honest with you though? Scala just hits different. I'm definitely riding the high of a new toy and it'll take some time to return to the equilibrium of "pick the right tool for the job". For now, I'm just excited to get to know Scala because it's going to open up doors to tackle fun and challenging problems. We'll begin with the first challenge of any programming relationship: how to install Scala on your machine.
