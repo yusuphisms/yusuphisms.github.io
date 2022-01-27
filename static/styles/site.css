@@ -172,6 +172,10 @@ post-sep:last-of-type {
     margin-top: 0;
 }
 
+.post img {
+    display: block;
+}
+
 .navposts {
     padding-top: 10px;
     width: 100%;
