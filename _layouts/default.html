@@ -1,56 +1,59 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159419552-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-159419552-1');
-    </script>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/static/styles/site.css">
-    <link rel="stylesheet" href="/static/styles/prism.css">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159419552-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-159419552-1');
+  </script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Input a title-->
-    <title>{{ page.title }}</title>
-  </head>
-  <body>
-    <div class="navbar-wrapper">
-      <nav id="navbar">
-          <div class="navbar-title">
-            <a href="/index.html">Yusuph Mkangara</a>
-            <div class="navbar-social-icons">
-              <a href="https://github.com/yo-my-bard"> <i class="fab fa-github"></i> </a>
-              <a href="https://twitter.com/Yusuphisms"> <i class="fab fa-twitter"></i> </a>
-              <a href="https://www.linkedin.com/in/yusuph-mkangara/"> <i class="fab fa-linkedin"></i> </a>
-              <a href="https://yusuph.dev/blog/atom.xml"> <i class="fas fa-rss"></i> </a>
-            </div>
-          </div>
-          <ul>
-              <li>
-                  <a href="/index.html">Home</a>
-              </li>
-              <li>
-                  <a href="/projects.html">Projects</a>
-              </li>
-              <li>
-                  <a href="/blog/index.html">Blog</a>
-              </li>
-          </ul>
-      </nav>
+  <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles/site.css">
+  <link rel="stylesheet" href="/static/styles/prism.css">
+
+  <!-- Input a title-->
+  <title>{{ page.title }}</title>
+</head>
+
+<body>
+  <div class="navbar-wrapper">
+    <nav id="navbar">
+      <div class="navbar-title">
+        <a href="/index.html">Yusuph Mkangara</a>
+        <div class="navbar-social-icons">
+          <a href="https://github.com/yusuphisms"> <i class="fab fa-github"></i> </a>
+          <a href="https://twitter.com/Yusuphisms"> <i class="fab fa-twitter"></i> </a>
+          <a href="https://www.linkedin.com/in/yusuph-mkangara/"> <i class="fab fa-linkedin"></i> </a>
+          <a href="https://yusuph.dev/blog/atom.xml"> <i class="fas fa-rss"></i> </a>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a href="/index.html">Home</a>
+        </li>
+        <li>
+          <a href="/projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="/blog/index.html">Blog</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 
-    <section class="container">
+  <section class="container">
     {{ content }}
-    </section>
+  </section>
 
-    <script src='/static/scripts/site.js'></script>
-    <script src='/static/scripts/prism.js'></script>
-  </body>
+  <script src='/static/scripts/site.js'></script>
+  <script src='/static/scripts/prism.js'></script>
+</body>
+
 </html>
